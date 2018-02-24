@@ -5,7 +5,9 @@ class School
   ROSTER = []
   def initialize(roster)
     @roster = roster
+    ROSTER << roster unless roster.delete
   end
   def add_student(name,grade)
+    
   end
 end
