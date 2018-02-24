@@ -1,6 +1,6 @@
 # code here!
 class School
-  attr_accessor :add_student, :grade, :sort
+  attr_accessor :name, :grade
   attr_reader :roster
   ROSTER = []
   def initialize(roster)
