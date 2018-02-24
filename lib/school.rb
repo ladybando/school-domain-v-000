@@ -7,7 +7,7 @@ class School
     @roster = roster
     ROSTER << roster ||= roster.delete
   end
-  def add_student(name,grade)
-
+  def add_student(add_student, grade)
+        Hash.new { |add_student, grade| add_student[grade] = [] }
   end
 end
