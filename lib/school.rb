@@ -7,6 +7,7 @@ class School
     @roster={}
   end
   def add_student(name, grade)
-        Hash.new { |add_student, grade| add_student[grade] = [] }
+    roster[grade] ||= []
+    roster[grade] << name
   end
 end
