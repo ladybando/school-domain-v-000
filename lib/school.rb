@@ -1,11 +1,9 @@
 # code here!
 class School
-  attr_accessor :name, :grade
-  attr_reader :roster
-  ROSTER = []
-  def initialize(roster)
-    @roster = roster
-    ROSTER << roster ||= roster.delete
+  attr_accessor :name, :roster
+  
+  def initialize(name)
+    @name = name
   end
   def add_student(add_student, grade)
         Hash.new { |add_student, grade| add_student[grade] = [] }
