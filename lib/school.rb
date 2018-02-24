@@ -8,6 +8,6 @@ class School
     ROSTER << roster unless roster.delete
   end
   def add_student(name,grade)
-    
+
   end
 end
